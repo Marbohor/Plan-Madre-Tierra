@@ -719,6 +719,69 @@ export default function App() {
 
       </main>
 
+      {/* StoryBook Section */}
+      <section className="mb-24 px-4 overflow-hidden">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-gradient-to-br from-forest-800 to-earth-900 rounded-[3rem] p-1 shadow-2xl relative">
+            <div className="bg-earth-50 rounded-[2.8rem] p-8 md:p-16 relative overflow-hidden">
+              {/* Decorative elements */}
+              <div className="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
+                <BookOpen className="w-64 h-64 text-forest-900" />
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
+                <div className="order-2 md:order-1">
+                  <div className="flex items-center gap-2 mb-4 text-forest-600 font-bold uppercase tracking-widest text-xs">
+                    <span className="h-[1px] w-8 bg-forest-600" />
+                    Narrativa Pedagógica
+                  </div>
+                  <h2 className="text-4xl md:text-5xl font-bold text-earth-950 mb-6 font-serif italic">
+                    El Susurro de Erda y el Espejo del Tiempo
+                  </h2>
+                  <div className="prose prose-earth max-w-none text-earth-800 leading-relaxed font-serif space-y-4">
+                    <p>
+                      En el corazón de los Andes, donde el viento arrastra secretos de miles de años, vivía Erda. No era una niña común; ella podía escuchar lo que otros ignoraban: el latido profundo de la montaña y el lamento sutil de los ríos.
+                    </p>
+                    <p>
+                      Un día, guiada por un colibrí de plumas esmeralda, Erda encontró el <strong>Espejo del Tiempo</strong>. No era de vidrio, sino de agua purísima atrapada en un círculo de piedras sagradas. Al mirar, no vio su rostro, sino el de la Tierra misma.
+                    </p>
+                    <p className="italic bg-forest-50 p-4 rounded-xl border-l-4 border-forest-500">
+                      "El espejo le mostró el pasado vibrante y un futuro incierto. Pero en el susurro del agua, Erda comprendió la verdad: los derechos de la Tierra no son leyes humanas, sino el pulso mismo de la vida."
+                    </p>
+                  </div>
+                  <div className="mt-10 flex flex-wrap gap-4">
+                    <a 
+                      href="https://gemini.google.com/share/9d95293d0536" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="px-8 py-4 bg-forest-700 text-white rounded-2xl font-bold hover:bg-forest-800 transition-all shadow-lg flex items-center gap-3 group"
+                    >
+                      Ver StoryBook en Gemini 
+                      <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </a>
+                  </div>
+                </div>
+                <div className="order-1 md:order-2">
+                  <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl relative rotate-2 group hover:rotate-0 transition-transform duration-700">
+                    <img 
+                      src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800" 
+                      alt="Storybook cover" 
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-forest-900/60 to-transparent" />
+                    <div className="absolute bottom-8 left-8 right-8 text-white">
+                      <p className="text-xs uppercase tracking-widest font-bold mb-2 opacity-80">Edición Especial</p>
+                      <p className="text-2xl font-serif italic">Lectura obligatoria para Hijos de la Tierra</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Bibliografía */}
       <section className="mb-24 px-4">
         <div className="max-w-4xl mx-auto">
