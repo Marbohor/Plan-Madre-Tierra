@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  
+  --color-earth-50: #fdfcf9;
+  --color-earth-100: #f9f6ef;
+  --color-earth-200: #f1ebd8;
+  --color-earth-300: #e2d7ba;
+  --color-earth-400: #ccba8f;
+  --color-earth-500: #b59b66;
+  --color-earth-600: #9e7f50;
+  --color-earth-700: #836743;
+  --color-earth-800: #6b543a;
+  --color-earth-900: #574532;
+  --color-earth-950: #2e241a;
+
+  --color-forest-50: #f2f8f2;
+  --color-forest-100: #e2ede2;
+  --color-forest-200: #c6dbc6;
+  --color-forest-300: #9bbfa0;
+  --color-forest-400: #6ca073;
+  --color-forest-500: #498350;
+  --color-forest-600: #38693d;
+  --color-forest-700: #2e5433;
+  --color-forest-800: #27432b;
+  --color-forest-900: #213a26;
+  --color-forest-950: #0f1f13;
+}
+
+@layer base {
+  body {
+    @apply bg-earth-50 text-earth-950 font-sans antialiased selection:bg-forest-200 selection:text-forest-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
